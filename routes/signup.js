@@ -18,7 +18,6 @@ router.get('/', checkNotLogin, function (req, res, next) {
 */
 router.post('/', checkNotLogin, function (req, res, next) {
     // res.send('注册')
-    // console.log(req)
     const name = req.fields.name
     const gender = req.fields.gender
     const bio = req.fields.bio
